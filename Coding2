@@ -1,0 +1,29 @@
+package exercise;
+import java.util.Scanner;
+public class PrintArrayInStars {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int stars;
+		
+		System.out.print("Enter number of items:");
+		stars = sc.nextInt();
+		int star[] = new int[stars];
+		
+		System.out.println("ENTER VALUE OF ALL ITEMS");
+		for(int j=0;j<star.length;j++) {
+			star[j]=sc.nextInt();
+		}
+		for(int j=0; j<stars; j++) {
+			System.out.print(j );
+			for (int z = 0; z<star[z]; z++) {
+		}
+			System.out.println("*");
+
+		}
+
+	}
+
+}
