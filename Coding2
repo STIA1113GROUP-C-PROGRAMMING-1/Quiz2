@@ -5,25 +5,27 @@ public class PrintArrayInStars {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		int Num_Items;
 		
-		int stars;
+		System.out.print ("Enter the number of items: ");
+		Num_Items=sc.nextInt();
 		
-		System.out.print("Enter number of items:");
-		stars = sc.nextInt();
-		int star[] = new int[stars];
 		
-		System.out.println("ENTER VALUE OF ALL ITEMS");
-		for(int j=0;j<star.length;j++) {
-			star[j]=sc.nextInt();
+		System.out.print ("Enter the value of all items: " + " ");
+		int [] items=new int [Num_Items];
+		
+		for (int z=0; z<=items.length; z++) {
+		items[z]=sc.nextInt();
+		
+		System.out.print (z + ": ");
+		
+		for (int k=1; k<=items[z]; k++) 
+			System.out.print ("*");
+			System.out.println ("(" + items[z]+ ")");
 		}
-		for(int j=0; j<stars; j++) {
-			System.out.print(j );
-			for (int z = 0; z<star[z]; z++) {
-		}
-			System.out.println("*");
-
-		}
-
+		
+		
 	}
 
 }
+
