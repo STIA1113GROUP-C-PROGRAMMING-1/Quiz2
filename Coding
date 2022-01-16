@@ -1,0 +1,29 @@
+package exercise;
+import java.util.Scanner;
+public class QUiz2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		 
+		System.out.println("PLEASE ENTER YOUR SALARY");
+		int sal=sc.nextInt();
+		System.out.println("YOUR SALARY: " + sal);
+		
+		System.out.println("ENTER YOUR YEAR OF SERVICE");
+		int year = sc.nextInt();
+		System.out.println("YEAR OF SERVICE" + year);
+		
+		if (year>5) {
+			double bon = sal*0.05;
+			System.out.println("Bonuss : " + bon);
+			}
+			else
+				System.out.println("no bonus");
+			double highestsalary = sal *1.05;
+			double lowestsalary = sal *1.00;
+			System.out.println("Highest salary : " + highestsalary);
+			System.out.println("Lowest salary : " + lowestsalary);
+	}
+
+}
