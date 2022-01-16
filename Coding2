@@ -7,11 +7,11 @@ public class PrintArrayInStars {
 		Scanner sc = new Scanner(System.in);
 		int Num_Items;
 		
-		System.out.print ("Enter the number of items: ");
+		System.out.print ("Please enter number of items: ");
 		Num_Items=sc.nextInt();
 		
 		
-		System.out.print ("Enter the value of all items: " + " ");
+		System.out.print ("Please enter value of all items: " + " ");
 		int [] items=new int [Num_Items];
 		
 		for (int z=0; z<=items.length; z++) {
